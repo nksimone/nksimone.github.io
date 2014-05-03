@@ -1,0 +1,12 @@
+%title Linux Related
+
+[[../index|Home]]
+==Linux Related==
+----
+<center>
+<h2>
+[[Useful Command/index|Useful Command]]
+
+</h2>
+</center>
+----

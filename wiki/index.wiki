@@ -1,0 +1,13 @@
+%title Simone's Strawberry Yard
+----
+<center>
+<h2>
+[[../public/messagebox|{{../public/images/spring.jpg}}]]
+----
+[[Oracle/index|Oracle]]
+[[Linux/index|Linux]]
+[[work/index|Work]]
+[[note/index|Note]]
+</h2>
+</center>
+----

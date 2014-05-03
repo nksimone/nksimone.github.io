@@ -1,4 +1,3 @@
-nksimone.github.io
-==================
+﻿Simone's Strawberry Yard http://nksimone.github.io
 
-Simone's Strawberry Yard
+Powered by Vim and Vimwiki

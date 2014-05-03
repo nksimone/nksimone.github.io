@@ -1,0 +1,13 @@
+%title Note
+
+[[../index|Home]]
+==Note==
+----
+<h2>
+<center>
+----
+[[database/index|DataBase]]
+[[linux/index|Linux]]
+</center>
+</h2>
+----
