@@ -1,7 +1,10 @@
+
 %title Oracle Related
 
 [[../index|Home]]
+%toc
 ==Oracle Related==
+%toc
 ----
 <center>
 <h2>

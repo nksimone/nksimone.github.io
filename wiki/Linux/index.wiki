@@ -5,7 +5,7 @@
 ----
 <center>
 <h2>
-[[Useful Command/index|Useful Command]]
+[[cmd/index|Useful Command]]
 
 </h2>
 </center>

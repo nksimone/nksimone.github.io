@@ -4,6 +4,7 @@
 <h2>
 [[../public/messagebox|{{../public/images/spring.jpg}}]]
 ----
+[[Introduction/index|Introduction]]
 [[Oracle/index|Oracle]]
 [[Linux/index|Linux]]
 [[work/index|Work]]
