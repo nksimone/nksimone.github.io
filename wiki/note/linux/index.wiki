@@ -1,9 +1,0 @@
-%title Linux
-
-[[../../index|Home]] - [[../index|Note]]
-==Linux==
-----
-<h2>
-
-</h2>
-----

@@ -1,7 +1,6 @@
 html {
     color: #cad3d6;
     min-height: 100%;
-    background: -webkit-gradient(linear , 0 100, 0 98%, from(#074A75), to(#000309) );
     background-color: #123;
     padding: 0;
     margin: 0;
@@ -43,24 +42,23 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0.15em 0;
 }
 h1 {
-    font-size: 1.79em;
+    font-size: 1.7em;
     padding-bottom: 0.1em;
-    color: #FF6600;
+    color: #f37;
     margin-bottom: 0.5em;
     margin-top: 0;
 }
 h2 {
     font-size: 1.52em;
-    color: #fd5;
-    border-bottom: 1px double #035;width: 100%;
+    /*border-bottom: 1px solid #29362E;*/
     /*border-bottom: 1px solid rgba(255,230,0,0.1);*/
-    
-    margin-top: 0.5em;
-	margin-bottom: 0.5em
+    color: #fd5;
+    margin-top: 1em;
+
 }
 h3 {
     font-size: 1.22em;
-    color: #6d9;
+    color: #df5;
     width: 80%;
     /*border-bottom: 1px dashed #29362E;*/
     /*border-bottom: 1px dashed  rgba(255,230,0,0.1);*/
@@ -69,19 +67,20 @@ h3 {
 }
 h4 {
     font-size: 1.15em;
-    color: #E7A7E7;
+    color: #6d9;
     margin-top: 0.8em;
 
 }
 h5 {
     font-size: 1.05em;
-    color: #F9F384;
+    color: #e3e3f3;
 
 }
 h6 {
     font-size: 1.0em;
-    color: #FF0022
+    color: #99CC00;
 }
+
 p, pre, blockquote, table, ul, ol, dl {
     margin: 0.5em 0 1em;
 }
@@ -111,16 +110,12 @@ img {
 
 code {
     padding: 2px 4px;
-    color: #3DD023;
+    color: #022538;
     font-family: 'Lucida Console', 'Courier New', Courier, monospace;
 }
 
 blockquote, pre {
     padding: 0.8em;
-    background: #39213E;
-    background: rgba(255,30,120,0.12);
-    border: 1px solid #614;
-    position: relative;
     z-index: 2;
     font-family: 'Lucida Console', 'Courier New', Courier, monospace;
     -webkit-transition: all 0.45s linear;
@@ -132,7 +127,7 @@ blockquote {
     border: 1px solid rgba(230,0,20,0.2);
 }
 blockquote:hover, pre:hover {
-    color: #eee;
+    color: #022538;
     background: rgba(255,30,120,0.25);
 }
 
@@ -160,14 +155,14 @@ th, td {
 
 }
 th {
-    background-color: #0A3668;
+    background-color: #f0f0f0;
 
 }
 hr {
     border: none;
-    border-top: 1px double #035;
+    border-top: 3px double #035;
     width: 100%;
-    margin:  0;
+    margin: 20px 0;
 }
 del {
     text-decoration: line-through;

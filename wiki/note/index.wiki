@@ -1,9 +1,0 @@
-%title Note
-
-[[../index|Home]]
-==Note==
-----
-<h2>
-
-</h2>
-----
