@@ -1,6 +1,7 @@
-%title Linux Related
-
 [[../index|Home]]
+
+%toc
+
 ==Linux Related==
 ----
 <center>
@@ -10,3 +11,5 @@
 </h2>
 </center>
 ----
+
+ %title Simone's Strawberry Yard

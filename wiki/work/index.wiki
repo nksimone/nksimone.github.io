@@ -1,6 +1,7 @@
-%title Work
-
 [[../index|Home]]
+
+%toc
+
 ==Work==
 ----
 <center>
@@ -9,3 +10,5 @@
 </h2>
 </center>
 ----
+
+ %title Simone's Strawberry Yard

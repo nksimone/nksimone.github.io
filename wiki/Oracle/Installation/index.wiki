@@ -1,6 +1,4 @@
-%title Installation 
-
-[[../../index|Home]] - [[../index|Oracle Related]]
+[[../../index|Home]] - [[../index|Oracle]]
 
 %toc
 
@@ -8,17 +6,17 @@
 
 ===一、安装CentOS系统===
 
-    1. 用CentOS 5.3的DVD引导启动主机，出现安装程序选择模式时，直接按Enter（回车键）。
+    1. 用 `CentOS 5.3` 的DVD引导启动主机，出现安装程序选择模式时，直接按 `Enter` （回车键）。
     
-    2. 系统开始检查硬件，没有问题后弹出DVD测试窗口，如果确认光盘没有问题，可以选择Skip跳过。
+    2. 系统开始检查硬件，没有问题后弹出DVD测试窗口，如果确认光盘没有问题，可以选择 `Skip` 跳过。
     
-    3. 进入安装欢迎界面，点击Next继续。
+    3. 进入安装欢迎界面，点击 `Next` 继续。
     
-    4. 选择“简体中文”，并点击Next继续。
+    4. 选择 `简体中文`，并点击Next继续。
     
-    5. 选择“美国英语式”键盘，点击Next继续。
+    5. 选择 `美国英语式` 键盘，点击 `Next` 继续。
     
-    6. 硬盘分区和格式化。如果是全新硬盘，会提示要初始化并清除所有数据，选择“是”。选择“建立自定义的分区结构”，点击“下一步”。
+    6. 硬盘分区和格式化。如果是全新硬盘，会提示要初始化并清除所有数据，选择 `是` 。选择 `建立自定义的分区结构` ，点击 `下一步` 。
     
     7. 建议分成`/boot`，`/`，`/home`，`swap`四个分区。
     {{{
@@ -27,29 +25,29 @@
     上内存时swap≈内存的1 - 1.5倍，8G以上时swap是内存的1倍，否则R8的JBOSS运行起来可能因交换空间小而报错。
     }}}
 
-    8. 引导装载程序设置，默认的GRUB就可以了，直接点击“下一步”。
+    8. 引导装载程序设置，默认的GRUB就可以了，直接点击 `下一步` 。
     
-    9. 网络配置。由于是测试用途，这里没修改，按照系统默认的“通过DHCP自动配置”就可以了。
+    9. 网络配置。由于是测试用途，这里没修改，按照系统默认的 `通过DHCP自动配置` 就可以了。
     
-    10. 时区选择，系统可以自动识别为“亚洲/上海”，点击“下一步”。
+    10. 时区选择，系统可以自动识别为 `亚洲/上海` ，点击 `下一步` 。
     
     11. 设置管理员密码（root密码）。
     
-    12. 选择安装的软件包，选中“现在定制”，然后单击“下一步”。
+    12. 选择安装的软件包，选中 `现在定制` ，然后单击 `下一步` 。
     
-    13. 在细节窗口中选择需要安装的软件包，“桌面环境”两个都选；“应用程序”选择：办公/生产率、图形化互联网、基于文本的互联网、工程和科学；“开发”部分选择：Java开发、开发工具、开发库、老的软件开发；“服务器”选择：DNS名称服务器、Windows文件服务器、万维网服务器、打印支持。“基本系统”选择：X窗口系统、管理工具。选择完以后点击“下一步”。
+    13. 在细节窗口中选择需要安装的软件包，`桌面环境` 两个都选；`应用程序` 选择：办公/生产率、图形化互联网、基于文本的互联网、工程和科学；`开发` 部分选择：Java开发、开发工具、开发库、老的软件开发；`服务器` 选择：DNS名称服务器、Windows文件服务器、万维网服务器、打印支持。`基本系统`选择：X窗口系统、管理工具。选择完以后点击 `下一步` 。
     
-    14. 出现准备安装窗口，点击“下一步”。
+    14. 出现准备安装窗口，点击 `下一步` 。
     
     15. 安装完成。
     
-    16. 安装后的初始化设置（系统第一次启动）。出现欢迎界面后，点击“前进”。
+    16. 安装后的初始化设置（系统第一次启动）。出现欢迎界面后，点击 `前进` 。
     
-    17. 防火墙设置为“禁用”（为测试方便，暂时禁用，以后可以启用防火墙）。
+    17. 防火墙设置为 `禁用` （为测试方便，暂时禁用，以后可以启用防火墙）。
     
-    18. SELinux设置为“禁用”。
+    18. SELinux设置为 `禁用` 。
     
-    19. 关闭Kdump内核崩溃转存。
+    19. 关闭 `Kdump` 内核崩溃转存。
     
     20. 设置日期时间，按默认即可。
     
@@ -76,24 +74,25 @@
     {{{
     以root用户登录桌面系统，右键点击桌面空白处，选择“打开终端”，并输入以下命令：
     
-    $ rpm -q binutils compat-libstdc++-33 elfutils-libelf elfutils-libelf-devel elfutils-libelf-devel-static  gcc gcc-c++ glibc glibc-common glibc-devel glibc-headers \
-    kernel-headers-2.6.18 ksh libaio libaio-devel libgcc libgomp libstdc++ libstdc++-devel make sysstat unixODBC unixODBC-devel
+    # rpm -q binutils compat-libstdc++-33 elfutils-libelf elfutils-libelf-devel elfutils-libelf-devel-static  gcc gcc-c++ glibc glibc-common \
+    glibc-devel glibc-headers kernel-headers-2.6.18 ksh libaio libaio-devel libgcc libgomp libstdc++ libstdc++-devel make sysstat unixODBC \ 
+    unixODBC-devel
     
     凡是not installed的就是还没安装的套件，在计算机联网的情况下可以用yum方式安装缺少的Library：
     
-    $ yum install compat-db gcc gcc-c++ libstdc++ pdksh sysstat compat-libstdc++-33 elfutils-libelf-devel elfutils-libelf-devel-static unixODBC unixODBC-devel \ 
-    libaio-devel
+    # yum install compat-db gcc gcc-c++ libstdc++ pdksh sysstat compat-libstdc++-33 elfutils-libelf-devel elfutils-libelf-devel-static unixODBC \ 
+    unixODBC-devel libaio-devel
     
     看到提示，请按y，安装尚未安装的套件，系统会透过yum在网路上搜索下载尚未安装的套件，并且自动安装。
     }}}
 
-    5) 安裝libXp：`$ yum install libXp`
+    5) 安裝libXp：`# yum install libXp`
     
     6) 添加oracle用户及用户组
 {{{
-    $ /usr/sbin/groupadd oinstall
-    $ /usr/sbin/groupadd dba
-    $ /usr/sbin/useradd -m -g oinstall -G dba oracle
+    # /usr/sbin/groupadd oinstall
+    # /usr/sbin/groupadd dba
+    # /usr/sbin/useradd -m -g oinstall -G dba oracle
     }}}
     7) 配置oracle的密码：`# passwd oracle`
     {{{
@@ -104,10 +103,8 @@
     vi编辑器中，按下i进入编辑模式，然后就可以正常的输入文字了。编辑完毕后按Esc，并按下shift + : 按键，输入wq!（由于这是一个只读文件所以需要再加上!）并且按下Enter。
     }}}
 
-    8) 修改Oracle所需系统参数
+    8) 修改Oracle所需系统参数：`# vi /etc/sysctl.conf`
     {{{
-    $ vi /etc/sysctl.conf
-    
     并输入以下内容：
 
     kernel.shmall = 2097152
@@ -121,16 +118,11 @@
     net.core.wmem_max=262144
 
     如果文件中已有一些参数与上面的参数重复的，就修改成上面文本中提供的数值。
-    
-    编辑完之后，储存，然后执行以下命令启用刚刚所做的修改：
-    
-    $ /sbin/sysctl -p
     }}}
-
-    9) 修改limits.conf
+    编辑完之后，储存，然后执行以下命令启用刚刚所做的修改：`# /sbin/sysctl -p`
+    
+    9) 修改limits.conf：# vi /etc/security/limits.conf
     {{{
-    $ vi /etc/security/limits.conf
-
     加入以下四行
 
     oracle  soft        nproc    2047
@@ -139,19 +131,14 @@
     oracle  hard        nofile   65536
     }}}
 
-    10) 修改login 文件
+    10) 修改login 文件：`# vi /etc/pam.d/login`
     {{{
-    $ vi /etc/pam.d/login
     session required /lib/security/pam_limits.so
     session required pam_limits.so
     }}}
     
-    11) 修改linux profile
+    11) 修改linux profile，将以下代码新增到profile文件中：`# vi /etc/profile`
     {{{
-    $ vi /etc/profile
-
-    将以下代码新增到profile文件中：
-
 　　if [ $USER = "oracle" ]; then
 　　    if [ $SHELL = "/bin/ksh" ]; then
 　　        ulimit -p 16384
@@ -175,9 +162,10 @@
     
     15) 编辑用户系统环境变量：
     {{{
-    # cd /home/oracle
-　　# vi .bash_profile
-　　修改并加入以下內容
+    $ cd /home/oracle
+　　$ vi .bash_profile
+    
+    修改并加入以下內容
 　　
 　　ORACLE_BASE=/opt/oracle
 　　ORACLE_HOME=$ORACLE_BASE/102
@@ -187,7 +175,7 @@
 　　export NLS_LANG=AMERICAN_AMERICA.ZHS16GBK
 　　export ORACLE_BASE ORACLE_HOME ORACLE_SID LD_LIBRARY_PATH PATH
 　　
-　　# source /home/oracle/.bash_profile
+　　$ source /home/oracle/.bash_profile
 　　让用户系统环境变量立刻生效。
     }}}
     
@@ -195,16 +183,16 @@
     {{{
     将下载的10201_database_linux32.zip复制到即将安装oracle的文件夹/opt/oracle
 　　回到终端窗口并且进入到oracle文件夹夹：
-　　# cd /opt/oracle
+　　$ cd /opt/oracle
 　　
 　　解压缩10201_database_linux32.zip请执行：
-　　# unzip 10201_database_linux32.zip
+　　$ unzip 10201_database_linux32.zip
 　　　　
 　　解压缩完成会在/opt/oracle文件夹中看到database的文件夹，进入database文件夹：
-　　`# cd database`
+　　$ cd database`
 　　
 　　因为CentOS是中文环境，安装时会出现中文乱码，还要将语言环境改为英文环境，执行以下命令：
-　　# export LANG=en_US
+　　$ export LANG=en_US
 　　
 　　所有准备工作都已经准备完毕，可以进行数据库软件的安装了。
 }}}
@@ -212,31 +200,34 @@
     
 ====2. 安装Oracle 10gR2数据库软件====
     
-    1) 开始安装Oracle 10gR2，执行：`# ./runInstaller`
+    1) 开始安装 `Oracle 10gR2` ，执行：`$ ./runInstaller`
     
-    2) 选择高级安装模式。
+    2) 选择 `高级安装` 模式。
     
-    3) 点击“Next”，进入下一步
+    3) 点击 `Next`，进入下一步。
     
-    4) 选择数据库版本，选择“Enterprise Edition”：
+    4) 选择数据库版本，选择 `Enterprise Edition` ：
     
-    5) 点击“Product Language”，出现下图对话框，添加简体中文，并点击“OK”，进入下一步：
+    5) 点击`Product Language`，出现下图对话框，添加 `简体中文` ，并点击`OK` ，进入下一步：
     
-    6) 使用默认的安装目录，点击“Next”，进入下一步：
+    6) 使用默认的安装目录，点击 `Next`，进入下一步。
     
-    7) 进行数据库安装前检查，如图所示，检查通过，点击“Next”，进入下一步（如果Checking Network Configuration requirements没有通过，勾选User Verified）：
+    7) 进行数据库安装前检查，点击 `Next`，进入下一步（如果`Checking Network Configuration requirements`没有通过，勾选`User Verified`）：
     
-    8) 选择“Install database software only”，点击“Next”，进入下一步：
+    8) 选择 `Install database software only`，点击 `Next`，进入下一步。
     
-    9) 最后出现Install Summary画面，此时只要点击Install按钮，Oracle即开始安装：
+    9) 最后出现 `Install Summary` 画面，此时只要点击 `Install` 按钮，Oracle即开始安装：
     
     10) 安装Oracle软件：
     
-    11) 安装完成前，出现以下的设置脚本：
+    11) 安装完成前，出现两个需要执行的设置脚本。
     
-    12) 打开一个新终端，输入su root，并且输入其密码。然后依次执行的以上两段script。
+    12) 打开一个新终端，输入 `su root`，并且输入密码。然后依次执行的以上两段script。
     
     13) 安装完成。　　
+
+-----
+修改日期：2011-10-21
 
     <div id="goTop" style="display: block">
       <a href="#top"" title="Go Top" onclick="window.scroll(0,0);"><img src="http://nksimone.github.io/public/images/gotoTop.png" height="24" width="24" border="0" alt="Go Top"/>

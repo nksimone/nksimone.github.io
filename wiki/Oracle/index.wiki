@@ -1,21 +1,15 @@
-
-%title Oracle Related
-
 [[../index|Home]]
+
 %toc
-==Oracle Related==
-%toc
-----
-<center>
+
 <h2>
-[[Concepts/index|Concepts]]
-
 [[Installation/index|Installation]]
+[[Concepts/index|Concepts]]
+[[SQL/index|SQL]] 
+[[Recovery/index|Recovery]] 
+[[Optimization/index|optimization]] 
 
-[[SQL/index|SQL]]
-
-[[Recovery/index|Recovery]]
 
 </h2>
-</center>
 ----
+%title Oracle Related

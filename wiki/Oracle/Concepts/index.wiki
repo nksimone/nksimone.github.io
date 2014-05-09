@@ -1,11 +1,26 @@
-%title Concepts
-
 [[../../index|Home]] - [[../index|Oracle Related]]
+
+%toc
+
 ==Concepts==
 ----
-<center>
-<h2>
+   {{{class="brush: bash"
+# /usr/sbin/groupadd osinstall
+# /usr/sbin/groupadd dba
+# /usr/sbin/useradd -m -g osinstall -G dba oracle
 
-[[</h2>]]
-</center>
+插入修改
+
+}}}
+
+{{{class="brush: sql"
+    select * from tablea;
+    insert into tablea values(1,2,3);
+    
+    }}}
+
+
+
 ----
+
+ %title Simone's Strawberry Yard

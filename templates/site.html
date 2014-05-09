@@ -1,29 +1,62 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>%title%</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>%title%</title>
+		<meta name="keywords" content="oracle, linux, note" />
         <link rel="Stylesheet" type="text/css" href="%root_path%../public/css/main.css" />
         <!-- blog ico -->
         <link type="image/x-icon" rel="icon" href="%root_path%../public/images/spring.ico" />
         <link type="image/x-icon" rel="shortcut icon" href="%root_path%../public/images/spring.ico" />
-    </head>
-    <body>
-        <center style="font-family: 'Microsoft Yahei', sans-serif; font-size: 1.80em;
-            font-weight: normal; color: #FF6600">Simone's Strawberry Yard</center><br />
-        <center>Oracle, Linux and Others</center>
+        
+        <!-- SyntaxHighlighter -->
+		<script src="%root_path%../public/SyntaxHighlighter/scripts/shCore.js"></script>
+		<!-- <script src="%root_path%../public/SyntaxHighlighter/scripts/shBrushCpp.js"></script>-->
+		<script src="%root_path%../public/SyntaxHighlighter/scripts/shBrushBash.js"></script>
+		<script src="%root_path%../public/SyntaxHighlighter/scripts/shBrushSql.js"></script>
+		<!-- <script src="%root_path%../public/SyntaxHighlighter/scripts/shBrushCss.js"></script>-->
+		<script src="%root_path%../public/SyntaxHighlighter/scripts/shBrushJava.js"></script>
+		<!-- <script src="%root_path%../public/SyntaxHighlighter/scripts/shBrushJScript.js"></script>-->
+		<!-- <script src="%root_path%../public/SyntaxHighlighter/scripts/shBrushXml.js"></script>-->
+		<!-- <script src="%root_path%../public/SyntaxHighlighter/scripts/shBrushPowerShell.js"></script>-->
+		<link type="text/css" rel="stylesheet" href="%root_path%../public/SyntaxHighlighter/styles/shCore.css"/>
+		<link type="text/css" rel="stylesheet" href="%root_path%../public/SyntaxHighlighter/styles/shThemeDefault.css"/>
+		<script>
+		SyntaxHighlighter.config.clipboardSwf = '%root_path%../public/SyntaxHighlighter/scripts/clipboard.swf';
+		SyntaxHighlighter.all();
+		</script>
+        
+	</head>
+	<body>
+		<div id="all">
+			<div id="header">
+				<ul id="top-nav">
+					<li>
+						<a href="%root_path%Introduction/index.html">Introduction</a>
+					</li>
+					<li>
+						<a href="%root_path%Oracle/index.html">Oracle</a>
+					</li>
+					<li>
+						<a href="%root_path%Linux/index.html">Linux</a>
+					</li>
+					<li>
+						<a href="%root_path%Note/index.html">Note</a>
+					</li>
+				</ul>
+			</div>
+			<div id="cse"></div>
+			<div id="main">
+				%content%
+			
 
+        		<center  style="font-family: 'Microsoft Yahei'; font-size: small; font-weight: normal; color: #009933">
+            		Simone Chen&nbsp;&copy;&nbsp;2012-2014&nbsp;http://nksimone.github.io
+        		</center>
+			
 
-        %content%
+		<script src="%root_path%../public/jquery-1.4.2.min.js" type="text/javascript"></script>
+		<script src="%root_path%../public/vimwiki.js" type="text/javascript"></script>
 
-
-        <center  style="font-family: 'Microsoft Yahei'; font-size: small; font-weight: normal; color: #009933">
-            Simone Chen&nbsp;&copy;&nbsp;2012-2014&nbsp;http://nksimone.github.io
-        </center>
-
-
-        <!-- 腾讯分析统计代码 -->
-        <script type="text/javascript" src="http://tajs.qq.com/stats?sId=9124871" charset="UTF-8"></script>
-
-    </body>
+	</body>
 </html>

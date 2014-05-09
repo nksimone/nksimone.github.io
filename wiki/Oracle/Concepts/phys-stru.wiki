@@ -1,0 +1,15 @@
+database (IO)</BR><>
+1.physical structure</br>
+parameter file</br>
+client parameter file  (pfile)</br>
+server parameter file (spfile)</br>
+a. control file</br>
+select * from v$controlfile</br>
+b. datafile</br>
+select * from dba_data_file</br>
+c. redo (online logfile)</br>
+select * from v$logfile</br>
+select * from v$log</br>
+d. password file (sys)</br>
+d:\oracle\product\10.2.0\db_1\database\PWDtsid.ora</br>
+
